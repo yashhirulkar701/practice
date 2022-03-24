@@ -6,10 +6,10 @@ RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|
 RUN yum install -y httpd \
 zip \
 unzip 
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip  /var/www/html
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page276/jon.zip  /var/www/html
 WORKDIR  /var/www/html
-RUN unzip photogenic.zip
-RUN cp -rvf photogenic/* .
-RUN rm -rf photogenic photogenic.zip
+RUN unzip jon.zip
+RUN cp -rvf jon/* .
+RUN rm -rf jon jon.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
