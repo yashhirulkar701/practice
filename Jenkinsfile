@@ -11,7 +11,7 @@ pipeline {
                 sh './gradlew build'
         }
         stage('Copy Dockerfile to Ansible Server'){
-               sshPublisher(publishers: [sshPublisherDesc(configName: 'Jenkins', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: 'rsync -avh  /var/lib/jenkins/workspace/apring-app/Dockerfile  root@172.31.11.37/root/docker/Dockerfile', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+               sshPublisher(publishers: [sshPublisherDesc(configName: 'Jenkins', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: 'rsync -avh  /var/lib/jenkins/workspace/apring-app/*  root@172.31.11.37/root/docker/Dockerfile', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
         }
         stage('Dockerfile Build in Ansible Server') {
              sshPublisher(publishers: [sshPublisherDesc(configName: 'Ansible', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '''
