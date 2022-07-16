@@ -6,7 +6,8 @@ node {
     }
 
      stage('Gradle Build') {
-
+       sh 'gradle --stop'
+       sh 'sleep 5'
        sh './gradlew build'
 
     }
