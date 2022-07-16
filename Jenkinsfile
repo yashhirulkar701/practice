@@ -6,7 +6,7 @@ node {
     }
 
      stage('Gradle Build') {
-       
+       sh 'cd /var/lib/jenkins/workspace/spring-app/'
        sh './gradlew build'
 
     }
