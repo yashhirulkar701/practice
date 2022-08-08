@@ -1,7 +1,7 @@
 
 ## Microservices CI/CD With Terraform, AWS CodePipeline + AWS CodeCommit + AWS CodeBuild + AWS ECS
 
-This project help you set up end to end CI/CD With AWS CI/CD Tools for your Amazon ECS Applications using Terraform
+This project will help you set up end to end CI/CD With AWS CI/CD Tools for your Amazon ECS Applications using Terraform
 
 - This project gives you clear idea of what Infrastrucre as Code Is
 - Using easy to to understand Terraform Code, makes cocepts much clear
