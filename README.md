@@ -45,7 +45,7 @@ After that:
 Initialize Terraform from the terraform project folder
 
 ```sh
-cd terraform_infra_deployment
+cd 'Terraform Scripts'
 terraform init
 ```
 
