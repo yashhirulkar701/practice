@@ -8,7 +8,7 @@
 
 - 📝 I regularly write articles on [https://yashhirulkar701.medium.com/](https://yashhirulkar701.medium.com/)
 
-- 💬 Ask me about **DevOps**
+- 💬 Ask me about **DevOps and Cloud**
 
 - 📫 How to reach me **https://www.linkedin.com/in/yash-hirulkar-701/**
 
