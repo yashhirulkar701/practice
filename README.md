@@ -28,6 +28,6 @@
 <a href="https://www.terraform.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" alt="go" width="40" height="40"/> </a>
 <a href="https://www.packer.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/packerio/packerio-icon.svg" alt="go" width="40" height="40"/> </a>
 <a href="https://www.sonarqube.org" target="_blank" rel="noreferrer"> <img src="https://github.com/get-icon/geticon/blob/master/icons/sonarqube.svg" alt="go" width="40" height="40"/> </a> 
-<a href="https://www.datree.io" target="_blank" rel="noreferrer"> <img src="https://github.com/cncf/landscape/blob/master/hosted_logos/datree%20logo%20Tall%20-%20color.svg" alt="go" width="40" height="40"/> </a></p>
+<a href="https://www.datree.io" target="_blank" rel="noreferrer"> <img src="https://github.com/cncf/landscape/blob/master/hosted_logos/datree%20logo%20Tall%20-%20color.svg" alt="go" width="60" height="60"/> </a></p>
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=yashhirulkar701&show_icons=true&locale=en&layout=compact" alt="yashhirulkar701" /></p>
