@@ -1,5 +1,5 @@
 
-<h1 align="center">Hi 👋, I'm Yash Hirulkar</h1>
+<h1 align="center">Hey There👋, I'm Yash Hirulkar</h1>
 <h3 align="center">Software Enthusiast, Passionate, Dedicated Blogger & DevOps Engineer</h3>
 
 - 🔭 I’m currently working at **Tata Consultancy Services**
