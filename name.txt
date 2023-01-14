@@ -3,3 +3,6 @@ divya
 kartik
 tom
 harry
+apple
+mango 
+pinapple
