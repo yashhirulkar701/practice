@@ -3,6 +3,9 @@ divya
 kartik
 tom
 harry
+tomatoes
+carrots
+potatoes
 apple
 mango 
 pinapple
