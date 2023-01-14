@@ -6,3 +6,6 @@ harry
 tomatoes
 carrots
 potatoes
+apple
+mango 
+pinapple
