@@ -7,7 +7,9 @@
 # - master
 
 pool:
-  vmImage: ubuntu-latest
+  name: pool-1
+  demands:
+    - agent.name -equals pool-1
 
 steps:
 - script: echo Hello, world!
