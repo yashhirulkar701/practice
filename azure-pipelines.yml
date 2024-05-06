@@ -7,9 +7,9 @@
 # - master
 
 pool:
-  name: pool-1
+  name: Default
   demands:
-    - agent.name -equals pool-1
+    - agent.name -equals Default
 
 steps:
 - script: echo Hello, world!
