@@ -9,7 +9,7 @@
 pool:
   name: Default
   demands:
-    - agent.name -equals Default
+    - agent.name -equals devops-agent
 
 steps:
 - script: echo Hello, world!
