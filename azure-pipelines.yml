@@ -7,15 +7,42 @@
 # - master
 
 pool:
-  name: Default
-  demands:
-    - agent.name -equals devops-agent
+  name: Azure Pipelines
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+variables:
+  name: Yash
+  imageName: python-app
+  acr-registry: acrtestregistry12.azurecr.io
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo This is my first pipeline..!
-  displayName: 'Run a multi-line script'
+stages:
+  - stage: Build
+    displayName: Build stage1
+    jobs:
+    - job: 
+      displayName: 'Run one-line script'
+      steps:
+
+      - task: DockerInstaller@0
+        displayName: Docker Installer
+        inputs:
+          dockerVersion: 17.09.0-ce
+          releaseType: stable 
+
+      - task: HelmInstaller@0
+        inputs:
+          helmVersion: '3.14.2'
+          installKubectl: true
+          kubectlVersion: '1.30.0'
+      
+      - script: |
+          echo Hello, $(name).!
+          echo System.DefaultWorkingDirectory: '$(System.DefaultWorkingDirectory)'
+          echo Pipeline.Workspace: '$(Pipeline.Workspace)'
+          echo Build.ArtifactStagingDirectory: '$(Build.ArtifactStagingDirectory)'
+          pwd
+          echo Helm version:
+          helm version --short
+          echo kubectl version:
+          kubectl version
+          echo Docker execution
+          docker ps -a
